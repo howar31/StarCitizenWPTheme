@@ -25,15 +25,6 @@ Template: twentytwelve
 	color: #C3F2FF;
 }
 
-.menu-toggle:active,
-.menu-toggle.toggled-on,
-button:active,
-input[type="submit"]:active,
-input[type="button"]:active,
-input[type="reset"]:active {
-	color: #C3F2FF;
-}
-
 .wp-caption .wp-caption-text,
 .gallery-caption,
 .entry-caption {
@@ -57,8 +48,6 @@ body .site {
 }
 
 .menu-toggle,
-.menu-toggle:hover, 
-.menu-toggle:focus, 
 button, 
 input[type="submit"], 
 input[type="button"], 
@@ -71,15 +60,20 @@ input[type="reset"] {
 }
 .menu-toggle:hover,
 .menu-toggle:active, 
+.menu-toggle:focus, 
 .menu-toggle.toggled-on, 
-button:active, 
-input[type="submit"]:active, 
-input[type="button"]:active, 
-input[type="reset"]:active, 
 button:hover, 
+button:active, 
+button:focus, 
 input[type="submit"]:hover, 
 input[type="button"]:hover, 
 input[type="reset"]:hover, 
+input[type="submit"]:active, 
+input[type="button"]:active, 
+input[type="reset"]:active, 
+input[type="submit"]:focus, 
+input[type="button"]:focus, 
+input[type="reset"]:focus, 
 article.post-password-required input[type=submit]:hover  {
 	color: #C3F2FF;
 	border: none;
@@ -100,7 +94,7 @@ input[type="text"] {
 }
 input[type="text"]:hover,
 input[type="text"]:focus {
-	box-shadow: 0px 0px 30px 1px #00E0FF;
+	box-shadow: 0px 0px 10px 1px #00E0FF;
 	transition-duration: 0.3s;
 }
 a {
@@ -109,11 +103,11 @@ a {
 	cursor: pointer;
 	transition-duration: 0.3s;
 }
-a:hover {
+a:hover, a:focus {
 	color: #C3F2FF;
 	transition-duration: 0.3s;
 }
-a:hover, a:active, a:focus, object, embed {
+a:hover, a:active, a:focus, object, embed, button {
 	outline: none;
 }
 ::selection {
@@ -295,6 +289,7 @@ article.sticky .featured-post {
 .entry-content-content {
 	background: url(images/bg_large_lines.png);
 	font-size: 1.2em;
+	color: #73B1CB;
 }
 .entry-content-content p:first-child::first-letter {
 	font-size: 3em;
@@ -302,6 +297,28 @@ article.sticky .featured-post {
 }
 .entry-content-content p {
 	line-height: 2;
+}
+.entry-content-content h1 {
+	color: #42EDF8;
+}
+.entry-content-content h2 {
+	color: #42EDF8;
+}
+.entry-content-content h3,
+.entry-content-content h4,
+.entry-content-content h5{
+	color: #FDD68C;
+}
+.entry-content-content h6 {
+	color: #FFF;
+	font-weight: normal;
+	background: rgba(255, 255, 255, 0.1);
+	padding: 10px;
+	margin: 0px;
+	border-radius: 5px;
+}
+.entry-content-content blockquote {
+	color: #FFF;
 }
 .entry-content table,
 .comment-content table {
