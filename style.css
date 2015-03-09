@@ -42,8 +42,7 @@ input[type="reset"]:active {
 
 body {
 	color: #6ABBCF;
-	background: url('images/SC.png') no-repeat left top;
-	background-size: 100%;
+	background: url('images/gridbg_glow.png') repeat center top, url('images/SC.png') no-repeat center top;
 	background-color: #000B11;
 }
 body.custom-font-enabled {
@@ -55,13 +54,6 @@ body .site {
 	box-shadow: none;
 	background: none;
 	max-width: 1200px;
-}
-#fullbg {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	background: url('images/gridbg_glow.png') repeat center top;
-	z-index: -1;
 }
 
 .menu-toggle,
