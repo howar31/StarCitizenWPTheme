@@ -11,8 +11,12 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php if ( ! is_page_template( 'page-templates/front-page.php' ) ) : ?>
 		<header class="entry-header">
-			<?php the_post_thumbnail(); ?>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
+			<div class="entry-header-content">
+				<div class="ttop"></div>
+				<?php the_post_thumbnail(); ?>
+				<h1 class="entry-title"><?php the_title(); ?></h1>
+			</div>
+			<div class="tbottom"></div>
 		</header>
 		<?php endif; ?>
 
