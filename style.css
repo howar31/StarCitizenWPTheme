@@ -113,6 +113,9 @@ a:hover {
 	color: #C3F2FF;
 	transition-duration: 0.3s;
 }
+a:hover, a:active, a:focus, object, embed {
+	outline: none;
+}
 ::selection {
 	background: #B3D4FC;
 	text-shadow: none;
