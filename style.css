@@ -154,7 +154,7 @@ a:hover {
 }
 .menu-main-container li:hover {
 	text-shadow: 0 0 0 #00E0FF, 0 0 11px #00A0B6;
-	box-shadow: 0px 10px 10px -5px #00E0FF;
+	box-shadow: 0px 10px 5px -5px #00E0FF;
 	transition-duration: 0.3s;
 }
 .main-navigation {
