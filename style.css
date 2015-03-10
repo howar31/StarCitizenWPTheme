@@ -296,13 +296,13 @@ article.sticky .featured-post {
 .entry-content-content p {
 	line-height: 2;
 }
-.entry-content-content h1 {
-	color: #42EDF8;
-}
+.entry-content-content h1,
 .entry-content-content h2 {
 	color: #42EDF8;
 }
-.entry-content-content h3,
+.entry-content-content h3 {
+	color: #00BDFD;
+}
 .entry-content-content h4,
 .entry-content-content h5{
 	color: #FDD68C;
