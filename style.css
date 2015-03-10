@@ -134,7 +134,7 @@ a:hover, a:active, a:focus, object, embed, button {
 .menu-main-container {
 	border-top: 2px solid rgba(12, 103, 161, 0.8);
 	border-bottom: 2px solid rgba(12, 103, 161, 0.8);
-	background: rgba(0, 0, 0, 0.4);
+	background: rgba(2, 14, 27, 0.8);
 }
 .menu-main-container li {
 	padding: 0px 20px;
@@ -169,7 +169,6 @@ a:hover, a:active, a:focus, object, embed, button {
 	padding: 0;
 }
 .main-navigation li ul li a {
-	background: rgba(0, 0, 0, 0.4);
 	color: #40E6F0;
 	font-size: 1.5em;
 	padding: 10px 20px;
@@ -177,7 +176,6 @@ a:hover, a:active, a:focus, object, embed, button {
 }
 .main-navigation li ul li a:hover,
 .main-navigation li ul li a:focus {
-	background: rgba(0, 0, 0, 0.4);
 	color: #C3F2FF;
 }
 .main-navigation .current-menu-item > a,
