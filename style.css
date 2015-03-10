@@ -73,7 +73,6 @@ Template: twentytwelve
 
 body {
 	color: #6ABBCF;
-	background: url('images/gridbg_glow.png') repeat center top, url('images/SC.png') no-repeat center top;
 	background-color: #000B11;
 }
 body.custom-font-enabled {

@@ -24,6 +24,19 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<?php // Dynamic backgrounds
+$backgrounds = glob('/var/lib/openshift/54fbed2afcf9333409000071/app-root/data/themes/twentytwelve-child/images/backgrounds/*.jpg');
+shuffle($backgrounds);
+$dynbg = $backgrounds[0];
+$pattern = "@/var/lib/openshift/54fbed2afcf9333409000071/app-root/data/@";
+$replacement = "";
+$dynbg = preg_replace($pattern, $replacement, $dynbg);
+?>
+<style type="text/css">
+body {
+	background: url('/wp-content/themes/twentytwelve-child/images/gridbg_glow.png') repeat center top, url('/wp-content/<?php echo $dynbg ?>') no-repeat center top;
+}
+</style>
 <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
