@@ -296,7 +296,9 @@ article.sticky .featured-post {
 .entry-content-content p {
 	line-height: 2;
 }
-.entry-content-content h1,
+.entry-content-content h1 {
+	color: #B1D8F1;
+}
 .entry-content-content h2 {
 	color: #42EDF8;
 }
