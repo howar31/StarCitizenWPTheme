@@ -49,7 +49,10 @@
 			<div class="corner corner-top-right"></div>
 			<div class="corner corner-bottom-left"></div>
 			<div class="corner corner-bottom-right"></div>
-			<footer class="entry-meta"><?php twentytwelve_entry_meta(); ?>	</footer><!-- .entry-meta -->
+			<footer class="entry-meta">
+				<div class="meta-info"><?php the_post_author(); ?> 於 <a href="<?php the_post_permalink(); ?>" title="<?php the_post_time(); ?>" rel="bookmark"><time class="entry-date" datetime="<?php the_post_datec(); ?>"><?php the_post_date(); ?></time></a><?php the_post_category(); the_post_tag(); ?></div>
+				<div class="meta-source"><?php the_post_source(); ?></div>
+			</footer><!-- .entry-meta -->
 			<div class="entry-content-content">
 				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?>
 				<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>

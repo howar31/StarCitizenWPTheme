@@ -12,4 +12,37 @@ function twentytwelve_entry_meta() {
 
 	printf('%1$s 於 %2$s', $author, $date);
 }
+
+function the_post_author() {
+	printf(get_the_author());
+}
+function the_post_category() {
+	if (get_the_category_list( __( ', ', 'twentytwelve' ) )) {
+		printf(' >> %1$s', get_the_category_list( __( ', ', 'twentytwelve' ) ));
+	}
+}
+function the_post_tag() {
+	if (get_the_tag_list( '', __( ', ', 'twentytwelve' ) )) {
+		printf(' (%1$s)', get_the_tag_list( '', __( ', ', 'twentytwelve' ) ));
+	}
+}
+function the_post_date() {
+	printf(esc_html( get_the_date() ));
+}
+function the_post_datec() {
+	printf(	esc_attr( get_the_date( 'c' ) ));
+}
+function the_post_time() {
+	printf(esc_attr( get_the_time() ));
+}
+function the_post_permalink() {
+	printf(esc_url( get_permalink() ));
+}
+function the_post_source() {
+	global $post;
+	$source = esc_url( get_post_meta($post->ID, 'source', true) );
+	if ($source) {
+		printf( '本篇原文網址 >> <a href="%1$s" target="_blank">%1$s</a>', $source );
+	}
+}
 ?>
