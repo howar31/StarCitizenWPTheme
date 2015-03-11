@@ -159,11 +159,11 @@ a {
 	cursor: pointer;
 	transition-duration: 0.3s;
 }
-a:hover, a:focus {
+a:hover {
 	color: #C3F2FF;
 	transition-duration: 0.3s;
 }
-a:hover, a:active, a:focus, object, embed, button {
+a:hover, a:active, a:focus, a:visited, object, embed, button {
 	outline: none;
 }
 ::selection {
@@ -420,9 +420,7 @@ footer.entry-meta {
 	color: #00BDFD;
 }
 .comments-link a:hover,
-.entry-meta a:hover,
-.comments-link a:focus,
-.entry-meta a:focus {
+.entry-meta a:hover{
 	color: #C3F2FF;
 }
 .entry-content a:visited,
@@ -430,21 +428,17 @@ footer.entry-meta {
 	color: #00BDFD;
 }
 .entry-content a:hover,
-.comment-content a:hover,
-.entry-content a:focus,
-.comment-content a:focus {
+.comment-content a:hover {
 	color: #C3F2FF;
 }
 .entry-meta .meta-source {
-	padding-left: 20px;
 	color: #2083A9;
 }
 div.meta-source>a ,
 div.meta-source>a:visited {
 	color: #2083A9;
 }
-div.meta-source>a:hover,
-div.meta-source>a:focus {
+div.meta-source>a:hover {
 	color: #C3F2FF;
 }
 
