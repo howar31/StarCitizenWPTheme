@@ -239,6 +239,20 @@ a:hover, a:active, a:focus, a:visited, object, embed, button {
 .nav-search {
 	text-align: right;
 }
+.nav-search form {
+	display: inline-block;
+}
+.socialplugins {
+	text-align: right;
+	display: inline-block;
+	position: relative;
+	top: 4px;
+	margin-right: 10px;
+}
+.socialplugins .fb-like {
+	top: -2px;
+	margin-left: 10px;
+}
 
 .widget-area .widget a {
 	color: #40E6F0;

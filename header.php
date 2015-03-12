@@ -42,17 +42,43 @@ body {
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 <?php wp_head(); ?>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: 'zh-TW'}
+</script>
 </head>
 
 <body <?php body_class(); ?>>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1577788369133372',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</hgroup>
-
-		<div class="nav-search"><?php get_search_form(); ?></div>
+		<div class="nav-search">
+			<div class="socialplugins">
+				<div class="g-plusone" data-size="medium" data-href="http://starcitizen.howar31.com/" data-align="right"></div>
+				<div class="fb-like" data-href="http://starcitizen.howar31.com/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+			</div>
+			<?php get_search_form(); ?>
+		</div>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></button>
 			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
