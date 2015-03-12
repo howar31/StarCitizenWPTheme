@@ -19,9 +19,6 @@
 		<header class="entry-header">
 			<div class="entry-header-content">
 				<div class="ttop"></div>
-				<?php if ( ! post_password_required() && ! is_attachment() ) :
-					the_post_thumbnail();
-				endif; ?>
 
 				<?php if ( is_single() ) : ?>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
@@ -30,10 +27,18 @@
 					<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 				</h1>
 				<?php endif; // is_single() ?>
-				<?php if ( comments_open() ) : ?>
-				<?php endif; // comments_open() ?>
+				<?php if ( comments_open() ) : ?><?php endif; // comments_open() ?>
 			</div><!-- .entry-header-content -->
 			<div class="tbottom"></div>
+			<?php if ( ! post_password_required() && ! is_attachment() ) : ?>
+				<div class="wp-post-image-holder">
+					<?php the_post_thumbnail(); ?>
+					<div class="corner corner-top-left"></div>
+					<div class="corner corner-top-right"></div>
+					<div class="corner corner-bottom-left"></div>
+					<div class="corner corner-bottom-right"></div>
+				</div>
+			<?php endif; ?>
 		</header><!-- .entry-header -->
 
 		<?php if ( is_search() ) : // Only display Excerpts for Search ?>
