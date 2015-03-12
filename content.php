@@ -31,7 +31,7 @@
 			</div><!-- .entry-header-content -->
 			<div class="tbottom"></div>
 		</header><!-- .entry-header -->
-		<?php if ( ! post_password_required() && ! is_attachment() && has_post_thumbnail() && ! is_category() ) : ?>
+		<?php if ( ! post_password_required() && ! is_attachment() && has_post_thumbnail() && ! is_category() && ! is_home() ) : ?>
 			<div class="wp-post-image-holder">
 				<?php the_post_thumbnail(); ?>
 				<div class="corner corner-top-left"></div>
