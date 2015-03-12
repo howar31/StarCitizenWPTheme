@@ -271,7 +271,7 @@ footer[role="contentinfo"] a:hover {
 }
 
 .entry-header {
-	margin-bottom: 0px;
+	margin-bottom: 20px;
 }
 .entry-header .tbottom {
 	width: 100%;
@@ -280,38 +280,39 @@ footer[role="contentinfo"] a:hover {
 	border-left: 1px solid #1681A5;
 	display: block;
 }
-.entry-header .wp-post-image-holder {
+.wp-post-image-holder {
 	border: 1px solid rgba(0, 162, 253, 0.15);
 	padding: 10px;
-	margin: 10px 0px;
+	margin: 0px;
 	position: relative;
 }
-.entry-header img.wp-post-image {
+img.wp-post-image {
 	width: 100%;
 	margin-bottom: 0px;
-}.entry-header .corner {
+}
+.corner {
 	position: absolute;
 	background-image: url("images/minor-border-corner.png");
 	width: 8px;
 	height: 8px;
 	display: block;
 }
-.entry-header .corner-top-left {
+.corner-top-left {
 	background-position: 0 0;
 	top: -1px;
 	left: -1px;
 }
-.entry-header .corner-top-right {
+.corner-top-right {
 	background-position: -2px 0;
 	top: -1px;
 	right: -1px;
 }
-.entry-header .corner-bottom-left {
+.corner-bottom-left {
 	background-position: 0 -2px;
 	bottom: -1px;
 	left: -1px;
 }
-.entry-header .corner-bottom-right {
+.corner-bottom-right {
 	background-position: -2px -2px;
 	bottom: -1px;
 	right: -1px;
@@ -361,6 +362,7 @@ article.sticky .featured-post {
 	color: #40E6F0;
 }
 .entry-content {
+	margin-top: 20px;
 	padding: 90px;
 	background: url('images/fading-bars-top.png') repeat-x top left, url('images/fading-bars-bottom.png') repeat-x bottom left, rgba(0, 0, 0, 0.4);
 	border: 1px solid #0D1F2C;

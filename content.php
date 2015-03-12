@@ -30,16 +30,16 @@
 				<?php if ( comments_open() ) : ?><?php endif; // comments_open() ?>
 			</div><!-- .entry-header-content -->
 			<div class="tbottom"></div>
-			<?php if ( ! post_password_required() && ! is_attachment() ) : ?>
-				<div class="wp-post-image-holder">
-					<?php the_post_thumbnail(); ?>
-					<div class="corner corner-top-left"></div>
-					<div class="corner corner-top-right"></div>
-					<div class="corner corner-bottom-left"></div>
-					<div class="corner corner-bottom-right"></div>
-				</div>
-			<?php endif; ?>
 		</header><!-- .entry-header -->
+		<?php if ( ! post_password_required() && ! is_attachment() && has_post_thumbnail() ) : ?>
+			<div class="wp-post-image-holder">
+				<?php the_post_thumbnail(); ?>
+				<div class="corner corner-top-left"></div>
+				<div class="corner corner-top-right"></div>
+				<div class="corner corner-bottom-left"></div>
+				<div class="corner corner-bottom-right"></div>
+			</div>
+		<?php endif; ?>
 
 		<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 		<div class="entry-summary">
