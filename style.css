@@ -161,6 +161,7 @@ a {
 }
 a:hover {
 	color: #C3F2FF;
+	position: relative;
 	transition-duration: 0.3s;
 }
 a:hover, a:active, a:focus, a:visited, object, embed, button {
@@ -186,7 +187,7 @@ a:hover, a:active, a:focus, a:visited, object, embed, button {
 	transition-duration: 0.3s;
 }
 .main-navigation {
-	margin: 10px 0px 20px 0px;
+	margin: 10px 0px 0px 0px;
 }
 .main-navigation a {
 	color: #40E6F0;
@@ -250,8 +251,9 @@ a:hover, a:active, a:focus, a:visited, object, embed, button {
 	margin-right: 10px;
 }
 .socialplugins .fb-like {
-	top: -2px;
 	margin-left: 10px;
+    height: 20px;
+    overflow: hidden;
 }
 
 .widget-area .widget a {

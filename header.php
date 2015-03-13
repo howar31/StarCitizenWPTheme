@@ -53,6 +53,7 @@ body {
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '1577788369133372',
+	  status     : true,
       xfbml      : true,
       version    : 'v2.2'
     });
@@ -62,20 +63,20 @@ body {
      var js, fjs = d.getElementsByTagName(s)[0];
      if (d.getElementById(id)) {return;}
      js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
+     js.src = "//connect.facebook.net/zh_TW/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="回首頁" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</hgroup>
 		<div class="nav-search">
 			<div class="socialplugins">
 				<div class="g-plusone" data-size="medium" data-href="http://starcitizen.howar31.com/" data-align="right"></div>
-				<div class="fb-like" data-href="http://starcitizen.howar31.com/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+				<div class="fb-like" data-href="http://starcitizen.howar31.com/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
 			</div>
 			<?php get_search_form(); ?>
 		</div>
