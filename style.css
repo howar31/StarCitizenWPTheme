@@ -555,3 +555,15 @@ article.format-aside h1 a:hover {
 	z-index: -1;
 	position: absolute;
 }
+
+@media (max-width: 500px) {
+	.entry-content {
+		padding: 20px;
+	}
+}
+@media (min-width: 501px) and (max-width: 800px) {
+	.entry-content {
+		padding: 50px;
+	}
+}
+
