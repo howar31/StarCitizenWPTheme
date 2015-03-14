@@ -154,7 +154,7 @@ input[type="text"]:focus {
 	transition-duration: 0.3s;
 }
 a {
-	color: #40E6F0;
+	color: #00BDFD;
 	text-decoration: none;
 	cursor: pointer;
 	transition-duration: 0.3s;
@@ -257,7 +257,7 @@ hr {
 }
 .socialplugins .fb-like {
 	margin-left: 10px;
-    height: 20px;
+	height: 20px;
 }
 .fb-like {
     overflow: hidden;
@@ -559,6 +559,13 @@ article.format-aside h1 a:hover {
 @media (max-width: 500px) {
 	.entry-content {
 		padding: 20px;
+	}
+	body .site {
+		margin: 0;
+		padding: 0;
+	}
+	.socialplugins .fb-like {
+		top: -5px;
 	}
 }
 @media (min-width: 501px) and (max-width: 800px) {
