@@ -76,7 +76,7 @@ body {
 		<div class="headerR">
 			<div class="g-plusone" data-size="medium" data-href="http://starcitizen.howar31.com/" data-align="right"></div>
 			<div class="fb-like" data-href="http://starcitizen.howar31.com/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-			<div class="rss-link"><a href="http://starcitizen.howar31.com/feed/" target="_blank">RSS</a></div>
+			<div class="rss-link"><a href="http://starcitizen.howar31.com/feed/" target="_blank" title="訂閱中文社群網 RSS Feed">RSS</a></div>
 			<div class="nav-search"><?php get_search_form(); ?></div>
 		</div>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
