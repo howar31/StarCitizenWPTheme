@@ -44,7 +44,7 @@ Template: twentytwelve
 	color: #C3F2FF;
 	font-size: 1.7em;
 	font-style: italic;
-	text-shadow: 0 0 0 #00E0FF, 0 0 11px #00A0B6;
+	text-shadow: 0 0 1px #00E0FF, 0 0 11px #00A0B6;
 	border-top: none;
 	padding: 0px 0px 0px 10px;
 	cursor: pointer;
@@ -88,13 +88,15 @@ body .site {
 
 .site-header h1 a,
 .site-header h2 a {
-	color: #40E6F0;
-	text-shadow: 0 0 0 #00E0FF, 0 0 11px #00A0B6;
+	color: #C3F2FF;
+	text-shadow: 0 0 65px #0DA8FF;
+	transition-duration: 0.7s;
 }
 .site-header h1 a:hover,
 .site-header h2 a:hover {
 	color: #FFF;
-	text-shadow: 0 0 65px #0DA8FF;
+	text-shadow: 0 0 1px #00E0FF, 0 0 65px #0DA8FF;
+	transition-duration: 0.7s;
 }
 .site-header h2 {
 	color: #40E6F0;
@@ -228,7 +230,7 @@ hr {
 	border-bottom: 2px solid rgba(2, 14, 27, 0.8);
 }
 .menu-main-container li:hover {
-	text-shadow: 0 0 0 #00E0FF, 0 0 11px #00A0B6;
+	text-shadow: 0 0 1px #00E0FF, 0 0 11px #00A0B6;
 	border-bottom: 2px solid #00E0FF;
 	transition-duration: 0.3s;
 }
@@ -429,7 +431,7 @@ article.sticky .featured-post {
 }
 .entry-content-content>p:first-of-type::first-letter {
 	font-size: 3em;
-	text-shadow: 0 0 65px #0DA8FF;
+	text-shadow: 0 0 1px #FFF, 0 0 65px #0DA8FF;
 	line-height: 1;
 	float: left;
 	padding-right: 10px;
@@ -470,7 +472,7 @@ article.sticky .featured-post {
 }
 .entry-content-content blockquote>p::first-letter {
 	font-size: 3em;
-	text-shadow: 0 0 65px #0DA8FF;
+	text-shadow: 0 0 1px #00E0FF, 0 0 65px #0DA8FF;
 }
 .entry-content table,
 .comment-content table {
