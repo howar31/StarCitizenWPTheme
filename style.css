@@ -86,9 +86,6 @@ body .site {
 	max-width: 1200px;
 }
 
-.site-header {
-	padding-bottom: 10px;
-}
 .site-header h1 a,
 .site-header h2 a {
 	color: #40E6F0;
