@@ -73,12 +73,11 @@ body {
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="回首頁" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</hgroup>
-		<div class="nav-search">
-			<div class="socialplugins">
-				<div class="g-plusone" data-size="medium" data-href="http://starcitizen.howar31.com/" data-align="right"></div>
-				<div class="fb-like" data-href="http://starcitizen.howar31.com/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-			</div>
-			<?php get_search_form(); ?>
+		<div class="headerR">
+			<div class="g-plusone" data-size="medium" data-href="http://starcitizen.howar31.com/" data-align="right"></div>
+			<div class="fb-like" data-href="http://starcitizen.howar31.com/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+			<div class="rss-link"><a href="http://starcitizen.howar31.com/feed/" target="_blank">RSS</a></div>
+			<div class="nav-search"><?php get_search_form(); ?></div>
 		</div>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></button>

@@ -86,6 +86,9 @@ body .site {
 	max-width: 1200px;
 }
 
+.site-header {
+	padding-bottom: 10px;
+}
 .site-header h1 a,
 .site-header h2 a {
 	color: #40E6F0;
@@ -104,6 +107,42 @@ body .site {
 	color: #2083A9;
 }
 
+hgroup {
+	float: left;
+	margin-bottom: 20px;
+}
+.headerR {
+	text-align: right;
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	float: right;
+}
+.headerR .fb-like {
+	margin-left: 10px;
+	height: 20px;
+}
+.headerR .rss-link {
+	display: inline-block;
+	line-height: 20px;
+	vertical-align: top;
+	margin: 0 10px;
+	font-style: italic;
+}
+.fb-like {
+    overflow: hidden;
+}
+.nav-search {
+	margin-top: 5px;
+	text-align: right;
+}
+.nav-search form {
+	display: inline-block;
+}
+
+.menu-toggle {
+	margin-top: 10px;
+}
 .menu-toggle,
 button, 
 input[type="submit"], 
@@ -114,6 +153,7 @@ input[type="reset"] {
 	box-shadow: none;
 	background: none;
 	transition-duration: 0.3s;
+	font-size: 1.2em;
 }
 .menu-toggle:hover,
 .menu-toggle:active, 
@@ -174,9 +214,8 @@ a:hover, a:active, a:focus, a:visited, object, embed, button {
 hr {
 	height: 1px;
 	background-color: rgba(255, 255, 255, 0.8);
-	box-shadow: 0px 0px 5px 1px #00E0FF;
+	box-shadow: 0px 0px 5px 1px #FFF;
 }
-
 
 .menu-main-container {
 	background: rgba(2, 14, 27, 0.8);
@@ -193,7 +232,8 @@ hr {
 	transition-duration: 0.3s;
 }
 .main-navigation {
-	margin: 10px 0px 0px 0px;
+	margin: 0px;
+	clear: both;
 }
 .main-navigation a {
 	color: #40E6F0;
@@ -202,6 +242,10 @@ hr {
 .main-navigation a:focus {
 	color: #FFF;
 	text-shadow: 0px 0px 10px #FFF;	
+}
+#menu-main {
+	box-shadow: 0px 0px 1px 1px #000;
+	border-radius: 5px;
 }
 .main-navigation li a {
 	line-height: 3;
@@ -245,26 +289,6 @@ hr {
 .main-navigation ul.nav-menu,
 .main-navigation div.nav-menu > ul {
 	border: none;
-}
-.nav-search {
-	text-align: right;
-}
-.nav-search form {
-	display: inline-block;
-}
-.socialplugins {
-	text-align: right;
-	display: inline-block;
-	position: relative;
-	top: 4px;
-	margin-right: 10px;
-}
-.socialplugins .fb-like {
-	margin-left: 10px;
-	height: 20px;
-}
-.fb-like {
-    overflow: hidden;
 }
 
 .widget-area .widget a {
@@ -440,7 +464,7 @@ article.sticky .featured-post {
 .entry-content-content blockquote {
 	color: #FFF;
 }
-.entry-content-content blockquote::first-letter {
+.entry-content-content blockquote>p::first-letter {
 	font-size: 3em;
 	text-shadow: 0 0 10px #FFF;
 }
@@ -571,9 +595,6 @@ article.format-aside h1 a:hover {
 	body .site {
 		margin: 0;
 		padding: 0;
-	}
-	.socialplugins .fb-like {
-		top: -5px;
 	}
 }
 @media (min-width: 501px) and (max-width: 800px) {
