@@ -468,6 +468,9 @@ article.sticky .featured-post {
 .entry-content-content blockquote {
 	color: #FFF;
 }
+.entry-content-content blockquote>p {
+	margin: 0;
+}
 .entry-content-content blockquote>p::first-letter {
 	font-size: 3em;
 	text-shadow: 0 0 10px #FFF;
