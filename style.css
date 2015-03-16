@@ -94,7 +94,7 @@ body .site {
 .site-header h1 a:hover,
 .site-header h2 a:hover {
 	color: #FFF;
-	text-shadow: 0px 0px 10px #FFF;	
+	text-shadow: 0 0 65px #0DA8FF;
 }
 .site-header h2 {
 	color: #40E6F0;
@@ -215,7 +215,7 @@ a:hover, a:active, a:focus, a:visited, object, embed, button {
 hr {
 	height: 1px;
 	background-color: rgba(255, 255, 255, 0.8);
-	box-shadow: 0px 0px 5px 1px #FFF;
+	box-shadow: 0px 0px 10px 1px #FFF;
 }
 
 .menu-main-container {
@@ -429,7 +429,7 @@ article.sticky .featured-post {
 }
 .entry-content-content>p:first-of-type::first-letter {
 	font-size: 3em;
-	text-shadow: 0 0 0 #00E0FF, 0 0 11px #00A0B6;
+	text-shadow: 0 0 65px #0DA8FF;
 	line-height: 1;
 	float: left;
 	padding-right: 10px;
@@ -470,7 +470,7 @@ article.sticky .featured-post {
 }
 .entry-content-content blockquote>p::first-letter {
 	font-size: 3em;
-	text-shadow: 0 0 10px #FFF;
+	text-shadow: 0 0 65px #0DA8FF;
 }
 .entry-content table,
 .comment-content table {
