@@ -211,6 +211,10 @@ a:hover, a:active, a:focus, a:visited, object, embed, button {
 	background: #B3D4FC;
 	text-shadow: none;
 }
+::-moz-selection {
+	background: #B3D4FC;
+	text-shadow: none;
+}
 hr {
 	height: 1px;
 	background-color: rgba(255, 255, 255, 0.8);
