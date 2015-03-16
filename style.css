@@ -93,7 +93,8 @@ body .site {
 }
 .site-header h1 a:hover,
 .site-header h2 a:hover {
-	color: #C3F2FF;
+	color: #FFF;
+	text-shadow: 0px 0px 10px #FFF;	
 }
 .site-header h2 {
 	color: #40E6F0;
@@ -131,7 +132,7 @@ input[type="submit"]:focus,
 input[type="button"]:focus, 
 input[type="reset"]:focus, 
 article.post-password-required input[type=submit]:hover  {
-	color: #C3F2FF;
+	color: #FFF;
 	border: none;
 	box-shadow: none;
 	background: none;
@@ -199,7 +200,8 @@ hr {
 }
 .main-navigation a:hover,
 .main-navigation a:focus {
-	color: #C3F2FF;
+	color: #FFF;
+	text-shadow: 0px 0px 10px #FFF;	
 }
 .main-navigation li a {
 	line-height: 3;
@@ -208,7 +210,8 @@ hr {
 }
 .main-navigation li a:hover,
 .main-navigation li a:focus {
-	color: #C3F2FF;
+	color: #FFF;
+	text-shadow: 0px 0px 10px #FFF;	
 }
 .main-navigation li ul li {
 	padding: 0;
@@ -229,7 +232,8 @@ hr {
 }
 .main-navigation li ul li a:hover,
 .main-navigation li ul li a:focus {
-	color: #C3F2FF;
+	color: #FFF;
+	text-shadow: 0px 0px 10px #FFF;	
 	background: rgba(2, 14, 27, 0.95);
 }
 .main-navigation .current-menu-item > a,
@@ -344,7 +348,7 @@ img.wp-post-image {
 	color: #40E6F0;
 }
 .format-status .entry-header header a:hover {
-	color: #C3F2FF;
+	color: #FFF;
 }
 .entry-header-content {
 	border-top: 1px solid #00E6FF;
@@ -364,7 +368,8 @@ img.wp-post-image {
 	font-weight: normal;
 }
 .entry-header-content a:hover {
-	color: #C3F2FF;
+	color: #FFF;
+	text-shadow: 0px 0px 10px #FFF;	
 }
 .entry-header-content .ttop {
 	width: 100px;
@@ -437,7 +442,7 @@ article.sticky .featured-post {
 }
 .entry-content-content blockquote::first-letter {
 	font-size: 3em;
-	text-shadow: 0 0 0 #00E0FF, 0 0 11px #00A0B6;
+	text-shadow: 0 0 10px #FFF;
 }
 .entry-content table,
 .comment-content table {
@@ -533,11 +538,11 @@ article.format-aside h1 a {
 	color: #40E6F0;
 }
 article.format-aside h1 a:hover {
-	color: #C3F2FF;
+	color: #FFF;
 }
 
 .comments-area article header a:hover {
-	color: #C3F2FF;
+	color: #FFF;
 }
 .comments-area article header cite a:hover {
 	text-decoration: none;
@@ -576,4 +581,3 @@ article.format-aside h1 a:hover {
 		padding: 50px;
 	}
 }
-
