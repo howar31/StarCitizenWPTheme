@@ -40,9 +40,14 @@ function the_post_permalink() {
 }
 function the_post_source() {
 	global $post;
-	$source = esc_url( get_post_meta($post->ID, 'source', true) );
-	if ($source) {
-		printf( '本篇原文網址 >> <a href="%1$s" target="_blank">%1$s</a>', $source );
+	$output = esc_url( get_post_meta($post->ID, 'source', true) );
+	if ($output) {
+		printf( '<div class="source">本篇原文網址 >> <a href="%1$s" target="_blank">%1$s</a></div>', $output );
+	}
+	$output = esc_attr( get_post_meta($post->ID, 'source_date', true) );
+	if ($output) {
+		$output = date("Y年 m月 d日", strtotime($output));
+		printf( '<div class="source_date">本篇原文時間 >> <time datetime="%1$s">%2$s</time></div>', $output, $output );
 	}
 }
 ?>

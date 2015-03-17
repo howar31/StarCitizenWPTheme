@@ -543,11 +543,11 @@ footer.entry-meta {
 .entry-meta .meta-source {
 	color: #2083A9;
 }
-div.meta-source>a ,
-div.meta-source>a:visited {
+div.meta-source a ,
+div.meta-source a:visited {
 	color: #2083A9;
 }
-div.meta-source>a:hover {
+div.meta-source a:hover {
 	color: #C3F2FF;
 }
 
