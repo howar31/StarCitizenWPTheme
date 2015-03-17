@@ -455,6 +455,7 @@ article.sticky .featured-post {
 }
 .entry-content-content h5 {
 	color: #0F0;
+	clear: none;
 }
 .entry-content-content h6 {
 	color: #FFF;
@@ -463,6 +464,7 @@ article.sticky .featured-post {
 	padding: 10px;
 	margin: 0px;
 	border-radius: 5px;
+	clear: none;
 }
 .entry-content-content blockquote {
 	color: #FFF;
