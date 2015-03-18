@@ -432,7 +432,7 @@ article.sticky .featured-post {
 .entry-content-content>p:first-of-type::first-letter {
 	font-size: 3em;
 	text-shadow: 0 0 1px #FFF, 0 0 65px #0DA8FF;
-	line-height: 1;
+	line-height: 1em;
 	float: left;
 	padding-right: 10px;
 	padding-top: 5px;
@@ -442,13 +442,14 @@ article.sticky .featured-post {
 	margin: 24px 0px;
 }
 .entry-content-content h1 {
-	color: #B1D8F1;
+	color: #FFF;
+	text-shadow: 0 0 60px rgba(255, 255, 255, 0.4);
 }
 .entry-content-content h2 {
-	color: #42EDF8;
+	color: #B1D8F1;
 }
 .entry-content-content h3 {
-	color: #00BDFD;
+	color: #42EDF8;
 }
 .entry-content-content h4 {
 	color: #FDD68C;
@@ -468,12 +469,14 @@ article.sticky .featured-post {
 }
 .entry-content-content blockquote {
 	color: #FFF;
+	text-shadow: 0 0 60px rgba(255, 255, 255, 0.4);
 }
 .entry-content-content blockquote>p {
 	margin: 0;
 }
 .entry-content-content blockquote>p::first-letter {
 	font-size: 3em;
+	line-height: 1em;
 	text-shadow: 0 0 1px #00E0FF, 0 0 65px #0DA8FF;
 }
 .entry-content table,
