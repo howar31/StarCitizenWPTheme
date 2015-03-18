@@ -214,6 +214,27 @@ blockquote>p::first-letter {
 	line-height: 1em;
 	text-shadow: 0 0 1px #00E0FF, 0 0 65px #0DA8FF;
 }
+table {
+	border-bottom: none;
+	margin: 10px 0px;
+}
+td {
+	border-top: none;
+}
+.mce-item-table td,
+.mce-item-table th {
+	padding: 6px;
+	text-align: left;
+	color: #999;
+	border-top: none !important;
+	border-bottom: 1px dashed #465F7A;
+	border-left: none;
+	border-right: 1px dashed #465F7A;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+table tr td strong {
+	color: #FFF;
+}
 a:visited {
 	color: #00BDFD;
 }

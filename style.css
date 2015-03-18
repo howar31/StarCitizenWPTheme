@@ -492,7 +492,22 @@ article.sticky .featured-post {
 }
 .entry-content table,
 .comment-content table {
-	border-bottom: none;	
+	border-bottom: none;
+	margin: 10px 0px;
+}
+.entry-content td {
+	border-top: none;
+}
+.entry-content table tr td {
+	padding: 6px;
+	text-align: left;
+	color: #999;
+	border-bottom: 1px dashed #465F7A;
+	border-right: 1px dashed #465F7A;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.entry-content table tr td strong {
+	color: #FFF;
 }
 .entry-content .corner {
 	background-image: url('images/account_corners.png');
