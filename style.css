@@ -442,23 +442,29 @@ article.sticky .featured-post {
 	margin: 24px 0px;
 }
 .entry-content-content h1 {
+	font-size: 2em;
 	color: #FFF;
 	text-shadow: 0 0 60px rgba(255, 255, 255, 0.4);
 }
 .entry-content-content h2 {
+	font-size: 1.6em;
 	color: #B1D8F1;
 }
 .entry-content-content h3 {
+	font-size: 1.4em;
 	color: #42EDF8;
 }
 .entry-content-content h4 {
+	font-size: 1.2em;
 	color: #FDD68C;
 }
 .entry-content-content h5 {
+	font-size: 0.8em;
 	color: #0F0;
 	clear: none;
 }
 .entry-content-content h6 {
+	font-size: 0.8em;
 	color: #FFF;
 	font-weight: normal;
 	background: rgba(255, 255, 255, 0.1);
@@ -475,7 +481,7 @@ article.sticky .featured-post {
 	margin: 0;
 }
 .entry-content-content blockquote>p::first-letter {
-	font-size: 3em;
+	font-size: 3rem;
 	line-height: 1em;
 	text-shadow: 0 0 1px #00E0FF, 0 0 65px #0DA8FF;
 }
