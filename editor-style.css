@@ -37,7 +37,7 @@ th,
 .donation th {
 	color: #00BDFD;
 	font-size: 1.5em;
-	border-bottom: 1px solid #FFF;
+	border-bottom: 1px solid #465F7A;
 	padding: 0px 0px 0px 10px;
 	text-shadow: 1px 1px 2px #000;	
 }
@@ -49,6 +49,7 @@ th,
 	border-top: none;
 	padding: 0px 0px 0px 10px;
 	cursor: pointer;
+	transition-duration: 0.3s;
 }
 .donation tr:hover td {
 	animation-name: blink;
@@ -61,6 +62,7 @@ th,
 	-webkit-animation-direction: alternate;
 	background: rgba(255, 255, 255, 0.1);
 	color: #FFF;
+	transition-duration: 0.3s;
 }
 .donation td:first-child::first-letter {
 	font-size: 1.8em;
@@ -218,8 +220,10 @@ table {
 	border-bottom: none;
 	margin: 10px 0px;
 }
-td {
+td,
+th {
 	border-top: none;
+	border-bottom: 1px solid #465F7A;
 }
 .mce-item-table td,
 .mce-item-table th {
@@ -232,7 +236,8 @@ td {
 	border-right: 1px dashed #465F7A;
 	background-color: rgba(0, 0, 0, 0.3);
 }
-table tr td strong {
+table tr td strong,
+table tr th strong {
 	color: #FFF;
 }
 a:visited {

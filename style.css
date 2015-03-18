@@ -36,7 +36,7 @@ Template: twentytwelve
 .entry-content .donation th {
 	color: #00BDFD;
 	font-size: 1.5em;
-	border-bottom: 1px solid #FFF;
+	border-bottom: 1px solid #465F7A;
 	padding: 0px 0px 0px 10px;
 	text-shadow: 1px 1px 2px #000;	
 }
@@ -48,6 +48,7 @@ Template: twentytwelve
 	border-top: none;
 	padding: 0px 0px 0px 10px;
 	cursor: pointer;
+	transition-duration: 0.3s;
 }
 .entry-content .donation tr:hover td {
 	animation-name: blink;
@@ -60,6 +61,7 @@ Template: twentytwelve
 	-webkit-animation-direction: alternate;
 	background: rgba(255, 255, 255, 0.1);
 	color: #FFF;
+	transition-duration: 0.3s;
 }
 .entry-content .donation td:first-child::first-letter {
 	font-size: 1.8em;
@@ -495,10 +497,13 @@ article.sticky .featured-post {
 	border-bottom: none;
 	margin: 10px 0px;
 }
-.entry-content td {
+.entry-content td,
+.entry-content th {
 	border-top: none;
+	border-bottom: 1px solid #465F7A;
 }
-.entry-content table tr td {
+.entry-content table tr td,
+.entry-content table tr th {
 	padding: 6px;
 	text-align: left;
 	color: #999;
@@ -506,7 +511,8 @@ article.sticky .featured-post {
 	border-right: 1px dashed #465F7A;
 	background-color: rgba(0, 0, 0, 0.3);
 }
-.entry-content table tr td strong {
+.entry-content table tr td strong,
+.entry-content table tr th strong {
 	color: #FFF;
 }
 .entry-content .corner {
