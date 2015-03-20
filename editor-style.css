@@ -236,6 +236,10 @@ th {
 	border-right: 1px dashed #465F7A;
 	background-color: rgba(0, 0, 0, 0.3);
 }
+.mce-item-table td:first-child,
+.mce-item-table th:first-child {
+	white-space: nowrap;
+}
 table tr td strong,
 table tr th strong {
 	color: #FFF;

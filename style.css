@@ -511,6 +511,10 @@ article.sticky .featured-post {
 	border-right: 1px dashed #465F7A;
 	background-color: rgba(0, 0, 0, 0.3);
 }
+.entry-content table tr td:first-child,
+.entry-content table tr th:first-child {
+	white-space: nowrap;
+}
 .entry-content table tr td strong,
 .entry-content table tr th strong {
 	color: #FFF;
