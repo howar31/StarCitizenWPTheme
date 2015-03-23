@@ -11,12 +11,24 @@ Template: twentytwelve
     url('fonts/OrbitronMedium.ttf');
 }
 @keyframes blink {
-   0%	{color: #C3F2FF;}
-   100%	{color: #FFF;}
+	0% {
+		color: #C3F2FF;
+		text-shadow: 0 0 1px #00E0FF, 0 0 11px #00A0B6;
+	}
+	100% {
+		color: #FFF;
+		text-shadow: 0 0 65px #0DA8FF;
+	}
  }
 @-webkit-keyframes blink {
-   0%	{color: #C3F2FF;}
-   100%	{color: #FFF;}
+	0%	{
+		color: #C3F2FF;
+		text-shadow: 0 0 1px #00E0FF, 0 0 11px #00A0B6;
+	}
+	100%	{
+		color: #FFF;
+		text-shadow: 0 0 65px #0DA8FF;
+	}
  }
 /*
 @font-face{
@@ -52,11 +64,11 @@ Template: twentytwelve
 }
 .entry-content .donation tr:hover td {
 	animation-name: blink;
-	animation-duration: 700ms;
+	animation-duration: 777ms;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 	-webkit-animation-name: blink;
-	-webkit-animation-duration: 700ms;
+	-webkit-animation-duration: 777ms;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
 	background: rgba(255, 255, 255, 0.1);

@@ -18,12 +18,12 @@ function the_post_author() {
 }
 function the_post_category() {
 	if (get_the_category_list( __( ', ', 'twentytwelve' ) )) {
-		printf(' >> %1$s', get_the_category_list( __( ', ', 'twentytwelve' ) ));
+		printf(' » %1$s', get_the_category_list( __( '、', 'twentytwelve' ) ));
 	}
 }
 function the_post_tag() {
 	if (get_the_tag_list( '', __( ', ', 'twentytwelve' ) )) {
-		printf(' (%1$s)', get_the_tag_list( '', __( ', ', 'twentytwelve' ) ));
+		printf(' (%1$s)', get_the_tag_list( '', __( '、', 'twentytwelve' ) ));
 	}
 }
 function the_post_date() {
@@ -42,12 +42,12 @@ function the_post_source() {
 	global $post;
 	$output = esc_url( get_post_meta($post->ID, 'source', true) );
 	if ($output) {
-		printf( '<div class="source">原文網址 >> <a href="%1$s" target="_blank">%1$s</a></div>', $output );
+		printf( '<div class="source">原文網址 » <a href="%1$s" target="_blank">%1$s</a></div>', $output );
 	}
 	$output = esc_attr( get_post_meta($post->ID, 'source_date', true) );
 	if ($output) {
 		$output = date("Y年 m月 d日", strtotime($output));
-		printf( '<div class="source_date">原文時間 >> <time datetime="%1$s">%2$s</time></div>', $output, $output );
+		printf( '<div class="source_date">原文時間 » <time datetime="%1$s">%2$s</time></div>', $output, $output );
 	}
 }
 ?>
