@@ -45,38 +45,75 @@ Template: twentytwelve
 .comment-content th {
 	color: #C3F2FF;
 }
-.entry-content .donation th {
-	color: #00BDFD;
-	font-size: 1.5em;
-	border-bottom: 1px solid #465F7A;
-	padding: 0px 0px 0px 10px;
-	text-shadow: 1px 1px 2px #000;	
-}
-.entry-content .donation td {
-	color: #C3F2FF;
-	font-size: 1.7em;
-	font-style: italic;
-	text-shadow: 0 0 1px #00E0FF, 0 0 11px #00A0B6;
-	border-top: none;
-	padding: 0px 0px 0px 10px;
-	cursor: pointer;
+
+ul.donation li {
+	list-style: none;
+	margin: 15px 0px;
+	background: rgba(23, 29, 37, 0.5);
+	border-left: 5px solid #233644;
 	transition-duration: 0.3s;
 }
-.entry-content .donation tr:hover td {
-	animation-name: blink;
-	animation-duration: 777ms;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-	-webkit-animation-name: blink;
-	-webkit-animation-duration: 777ms;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-direction: alternate;
-	background: rgba(255, 255, 255, 0.1);
+ul.donation li:hover {
+	background: rgba(35, 54, 68, 0.5);
+	border-left: 5px solid #C3F2FF;
+	transition-duration: 0.3s;
+}
+ul.donation li:hover div {
 	color: #FFF;
 	transition-duration: 0.3s;
 }
-.entry-content .donation td:first-child::first-letter {
-	font-size: 1.8em;
+ul.donation li:hover div:first-child {
+	text-shadow: 0 0 65px #0DA8FF;
+}
+ul.donation li:before {
+	display: table;
+	content: " ";
+}
+ul.donation li:after {
+	display: table;
+	content: " ";
+	clear: both;
+}
+ul.donation li div {
+	float: left;
+	border-right: 1px dashed #226286;
+	padding-left: 20px;
+	margin: 20px 0px;
+	transition-duration: 0.3s;
+	position: relative;
+	white-space: nowrap;
+}
+ul.donation li div:last-child {
+	border-right: none;
+}
+ul.donation li div.donation_name {
+	width: 40%;
+}
+ul.donation li div.donation_amount {
+	width: 20%;
+}
+ul.donation li div.donation_date {
+	width: 20%;
+}
+ul.donation li div.donation_name:before {
+	content: "Name";
+}
+ul.donation li div.donation_amount:before {
+	content: "Donation";
+}
+ul.donation li div.donation_date:before {
+	content: "Date";
+}
+ul.donation li div.donation_name:before,
+ul.donation li div.donation_amount:before,
+ul.donation li div.donation_date:before {
+	display: block;
+	position: absolute;
+	top: -15px;
+	left: 15px;
+	font-size: 0.6em;
+	font-style: italic;
+	color: #226286;
 }
 
 .wp-caption .wp-caption-text,
@@ -655,9 +692,23 @@ article.format-aside h1 a:hover {
 		margin: 0;
 		padding: 0;
 	}
+	ul.donation li div {
+		float: none;
+		width: 100% !important;
+		border-right: none;
+	}
 }
 @media (min-width: 501px) and (max-width: 800px) {
 	.entry-content {
 		padding: 50px;
+	}
+	ul.donation li div.donation_name {
+		float: none;
+		width: 100% !important;
+		border-right: none;
+	}
+	ul.donation li div.donation_amount,
+	ul.donation li div.donation_date {
+		width: 40%
 	}
 }
