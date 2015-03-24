@@ -119,7 +119,10 @@ ul.donation li div.donation_date:before {
 .wp-caption .wp-caption-text,
 .gallery-caption,
 .entry-caption {
-	color: #C3F2FF;
+	color: #65818A;
+	font-style: italic;
+	text-align: center;
+	margin: 0;
 }
 
 body {
