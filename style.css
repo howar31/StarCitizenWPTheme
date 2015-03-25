@@ -51,7 +51,10 @@ ul.donation li {
 	margin: 15px 0px;
 	background: rgba(23, 29, 37, 0.5);
 	border-left: 5px solid #233644;
+	border-radius: 0px 5px 5px 0px;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
 	transition-duration: 0.3s;
+	cursor: default;
 }
 ul.donation li:hover {
 	background: rgba(35, 54, 68, 0.5);
