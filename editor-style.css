@@ -68,6 +68,76 @@ th,
 	font-size: 1.8em;
 }
 
+ul.trans li {
+	list-style: none;
+	margin: 15px 0px;
+	background: rgba(23, 29, 37, 0.5);
+	border-left: 5px solid #233644;
+	border-radius: 0px 5px 5px 0px;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+	transition-duration: 0.3s;
+	cursor: default;
+}
+ul.trans li:hover {
+	background: rgba(35, 54, 68, 0.5);
+	border-left: 5px solid #C3F2FF;
+	transition-duration: 0.3s;
+}
+ul.trans li:hover div {
+	color: #FFF;
+	transition-duration: 0.3s;
+}
+ul.trans li:hover div:first-child {
+	text-shadow: 0 0 65px #0DA8FF;
+}
+ul.trans li:before {
+	display: table;
+	content: " ";
+}
+ul.trans li:after {
+	display: table;
+	content: " ";
+	clear: both;
+}
+ul.trans li div {
+	float: left;
+	padding-left: 20px;
+	margin: 20px 0px;
+	transition-duration: 0.3s;
+	position: relative;
+}
+ul.trans li div:first-child {
+	border-right: 1px dashed #226286;
+}
+ul.trans li div.trans_eng, 
+ul.trans li div.trans_cht {
+	width: 45%;
+	white-space: nowrap;
+}
+ul.trans li div.trans_note {
+	width: 95%;
+}
+ul.trans li div.trans_eng:before {
+	content: "英文原文";
+}
+ul.trans li div.trans_cht:before {
+	content: "中文翻譯";
+}
+ul.trans li div.trans_note:before {
+	content: "說明";
+}
+ul.trans li div.trans_eng:before,
+ul.trans li div.trans_cht:before,
+ul.trans li div.trans_note:before {
+	display: block;
+	position: absolute;
+	top: -15px;
+	left: 15px;
+	font-size: 0.6em;
+	font-style: italic;
+	color: #226286;
+}
+
 body {
 	color: #6ABBCF;
 	background-color: #000B11;
