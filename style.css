@@ -167,6 +167,8 @@ ul.trans li div.trans_cht {
 }
 ul.trans li div.trans_note {
 	width: 95%;
+	color: #2083A9;
+	font-size: 0.8em;
 }
 ul.trans li div.trans_eng:before {
 	content: "英文原文";
