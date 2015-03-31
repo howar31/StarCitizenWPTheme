@@ -163,7 +163,6 @@ ul.trans li div:first-child {
 ul.trans li div.trans_eng, 
 ul.trans li div.trans_cht {
 	width: 45%;
-	white-space: nowrap;
 }
 ul.trans li div.trans_note {
 	width: 95%;
@@ -764,6 +763,10 @@ article.format-aside h1 a:hover {
 }
 
 @media (max-width: 500px) {
+	.site-content article {
+		margin-left: 1px;
+		margin-right: 1px;
+	}
 	.entry-content {
 		padding: 20px;
 	}
