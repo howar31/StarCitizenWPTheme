@@ -50,4 +50,9 @@ function the_post_source() {
 		printf( '<div class="source_date">原文時間 » <time datetime="%1$s">%2$s</time></div>', $output, $output );
 	}
 }
+
+function custom_excerpt_more( $more ) {
+	return ' ...';
+}
+add_filter( 'excerpt_more', 'custom_excerpt_more' );
 ?>

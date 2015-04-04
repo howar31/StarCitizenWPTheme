@@ -38,6 +38,77 @@ Template: twentytwelve
 }
 */
 
+div.recent-posts {
+	background: url('images/fading-bars-top.png') repeat-x top left, url('images/fading-bars-bottom.png') repeat-x bottom left, rgba(0, 0, 0, 0.4);
+	border: 1px solid #0D1F2C;
+	border-top-color: #286E80;
+	position: relative;
+	margin: 20px 0px 40px 0px;
+	padding: 60px 30px;
+}
+ul.recent-posts-list {
+	overflow: hidden;
+	border-radius: 10px;
+	position: relative;
+}
+li.recent-posts-entities {
+	width: 50%;
+	height: auto;
+	float: left;
+}
+li.recent-posts-entities:first-of-type {
+	width: 100%;
+	font-size: 1.2em;
+}
+.recent-posts-thumbnail {
+	border: 1px solid rgba(0, 162, 253, 0.15);
+	padding: 10px;
+	margin: 10px;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.5);
+	min-height: 50px;
+}
+.recent-posts-info {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	margin: -10px;
+	padding: 10px;
+	box-sizing: border-box;
+	transition-duration: 0.3s;
+}
+.recent-posts-thumbnail:hover .recent-posts-info {
+	background-color: rgba(0, 0, 0, 0.9);
+	transition-duration: 0.3s;
+	}
+.recent-posts-thumbnail:hover .recent-posts-title {
+	text-shadow: 0px 0px 25px #0DA8FF;
+	transition-duration: 0.1s;
+}
+.recent-posts-title {
+	font-size: 1.2em;
+	margin: 5px 0px;
+	text-shadow: 1px 1px 2px #000;
+}
+.recent-posts-date {
+	font-style: italic;
+	color: #226286;
+	font-size: 0.8em;
+	margin: 5px 0px;
+}
+.recent-posts-head {
+	font-size: 2em;
+	color: #C3F2FF;
+	text-shadow: 0 0 65px #0DA8FF;
+	margin: 20px 10px;
+}
+.recent-posts-more {
+	text-align: right;
+	margin: 20px 0px;
+}
+
 .archive-title,
 .page-title,
 .widget-title,
@@ -284,6 +355,10 @@ body .site {
 	max-width: 1200px;
 }
 
+.site-header {
+	padding: 0px;
+	margin: 20px 0px;
+}
 .site-header h1 a,
 .site-header h2 a {
 	color: #C3F2FF;
@@ -550,33 +625,63 @@ img.wp-post-image {
 	width: 100%;
 	margin-bottom: 0px;
 }
-.corner {
+.minor-corner {
 	position: absolute;
 	background-image: url("images/minor-border-corner.png");
 	width: 8px;
 	height: 8px;
 	display: block;
 }
-.corner-top-left {
+.minor-corner-top-left {
 	background-position: 0 0;
 	top: -1px;
 	left: -1px;
 }
-.corner-top-right {
+.minor-corner-top-right {
 	background-position: -2px 0;
 	top: -1px;
 	right: -1px;
 }
-.corner-bottom-left {
+.minor-corner-bottom-left {
 	background-position: 0 -2px;
 	bottom: -1px;
 	left: -1px;
 }
-.corner-bottom-right {
+.minor-corner-bottom-right {
 	background-position: -2px -2px;
 	bottom: -1px;
 	right: -1px;
 }
+.corner {
+	background-image: url('images/account_corners.png');
+	width: 30px;
+	height: 30px;
+}
+.corner-top-left {
+	background-position: 0 0;
+	position: absolute;
+	top: -5px;
+	left: 0;
+}
+.corner-top-right {
+	background-position: -30px 0;
+	position: absolute;
+	top: -5px;
+	right: 0;
+}
+.corner-bottom-left {
+	background-position: 0 -30px;
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+}
+.corner-bottom-right {
+	background-position: -30px -30px;
+	position: absolute;
+	bottom: -5px;
+	right: 0;
+}
+
 .format-status .entry-header header a {
 	color: #40E6F0;
 }
@@ -723,35 +828,6 @@ article.sticky .featured-post {
 .entry-content table tr th strong {
 	color: #FFF;
 }
-.entry-content .corner {
-	background-image: url('images/account_corners.png');
-	width: 30px;
-	height: 30px;
-}
-.entry-content .corner-top-left {
-	background-position: 0 0;
-	position: absolute;
-	top: -5px;
-	left: 0;
-}
-.entry-content .corner-top-right {
-	background-position: -30px 0;
-	position: absolute;
-	top: -5px;
-	right: 0;
-}
-.entry-content .corner-bottom-left {
-	background-position: 0 -30px;
-	position: absolute;
-	bottom: -5px;
-	left: 0;
-}
-.entry-content .corner-bottom-right {
-	background-position: -30px -30px;
-	position: absolute;
-	bottom: -5px;
-	right: 0;
-}
 
 .site-content {
 	margin: 0;
@@ -839,6 +915,33 @@ article.format-aside h1 a:hover {
 	position: absolute;
 }
 
+@media (max-width: 800px) {
+	.entry-content {
+		padding: 50px;
+	}
+	ul.donation li div.donation_name {
+		float: none;
+		width: 100% !important;
+		border-right: none;
+	}
+	ul.donation li div.donation_amount,
+	ul.donation li div.donation_date {
+		width: 40%
+	}
+	
+	ul.trans li div {
+		float: none !important;
+		width: 90% !important;
+		border-right: none !important;
+	}
+	
+	li.recent-posts-entities {
+		width: 100%;
+	}
+	div.recent-posts {
+		padding: 20px;
+	}
+}
 @media (max-width: 599px) {
 	.site-content article {
 		margin-left: 1px;
@@ -873,24 +976,7 @@ article.format-aside h1 a:hover {
 	#menu-main li ul.sub-menu li a:hover {
 		background: none;
 	}
-}
-@media (min-width: 600px) and (max-width: 800px) {
-	.entry-content {
-		padding: 50px;
-	}
-	ul.donation li div.donation_name {
-		float: none;
-		width: 100% !important;
-		border-right: none;
-	}
-	ul.donation li div.donation_amount,
-	ul.donation li div.donation_date {
-		width: 40%
-	}
-	
-	ul.trans li div {
-		float: none !important;
-		width: 90% !important;
-		border-right: none !important;
+	div.recent-posts {
+		padding: 20px 0px;
 	}
 }
