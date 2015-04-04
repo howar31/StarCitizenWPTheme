@@ -46,6 +46,9 @@ Template: twentytwelve
 	color: #C3F2FF;
 }
 
+ul.donation {
+	font-size: 1.2rem;
+}
 ul.donation li {
 	list-style: none;
 	margin: 15px 0px;
@@ -114,11 +117,14 @@ ul.donation li div.donation_date:before {
 	position: absolute;
 	top: -15px;
 	left: 15px;
-	font-size: 0.6em;
+	font-size: 0.7rem;
 	font-style: italic;
 	color: #226286;
 }
 
+ul.trans {
+	font-size: 1.2rem;
+}
 ul.trans li {
 	list-style: none;
 	margin: 15px 0px;
@@ -185,7 +191,70 @@ ul.trans li div.trans_note:before {
 	position: absolute;
 	top: -15px;
 	left: 15px;
-	font-size: 0.6em;
+	font-size: 0.7rem;
+	font-style: italic;
+	color: #226286;
+}
+
+ul.tablabel {
+	font-size: 1.2rem;
+}
+ul.tablabel li {
+	list-style: none;
+	margin: 15px 0px;
+	background: rgba(23, 29, 37, 0.5);
+	border-left: 5px solid #233644;
+	border-radius: 0px 5px 5px 0px;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+	transition-duration: 0.3s;
+	cursor: default;
+}
+ul.tablabel li:hover {
+	background: rgba(35, 54, 68, 0.5);
+	border-left: 5px solid #C3F2FF;
+	transition-duration: 0.3s;
+}
+ul.tablabel li:hover div {
+	color: #FFF;
+	transition-duration: 0.3s;
+}
+ul.tablabel li:hover div.tablabel_main {
+	text-shadow: 0 0 65px #0DA8FF;
+}
+ul.tablabel li:after {
+	display: table;
+	content: " ";
+	clear: both;
+}
+ul.tablabel li div.tablabel_main {
+	width: 95%;
+	margin: 20px 0px 10px 0px;
+}
+ul.tablabel li div.tablabel_content {
+	width: 95%;
+	color: #2083A9;
+	font-size: 0.8em;
+	margin: 10px 0px 20px 0px;
+}
+ul.tablabel li div.tablabel_main,
+ul.tablabel li div.tablabel_content {
+	position: relative;
+	float: left;
+	padding-left: 20px;
+	transition-duration: 0.3s;
+	position: relative;
+}
+ul.tablabel li div.tablabel_main p,
+ul.tablabel li div.tablabel_content p {
+	margin: 0px;
+}
+ul.tablabel li div.tablabel_main_title,
+ul.tablabel li div.tablabel_content_title {
+	display: block;
+	position: absolute;
+	top: -15px;
+	left: 15px;
+	font-size: 0.7rem;
 	font-style: italic;
 	color: #226286;
 }
