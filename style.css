@@ -393,6 +393,7 @@ hgroup {
 .headerR .fb-like {
 	margin-left: 10px;
 	height: 20px;
+	display: inline-block;
 }
 .headerR .rss-link {
 	display: inline-block;
@@ -402,7 +403,8 @@ hgroup {
 	font-style: italic;
 }
 .fb-like {
-    overflow: hidden;
+	overflow: hidden;
+	display: inline-block;
 }
 .nav-search {
 	margin-top: 5px;
