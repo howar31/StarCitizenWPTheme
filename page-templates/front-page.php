@@ -14,34 +14,6 @@
 
 get_header(); ?>
 
-	<div class="recent-posts">
-		<h1 class="recent-posts-head">最新文章</h1>
-		<?php query_posts('posts_per_page=5'); ?>
-		<ul class="recent-posts-list">
-		<?php while (have_posts()) : the_post(); ?>
-		<li class="recent-posts-entities">
-			<div class="recent-posts-thumbnail">
-				<a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a>
-				<div class="recent-posts-info">
-					<div class="recent-posts-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></div>
-					<div class="recent-posts-date"><?php echo get_the_date(); ?></div>
-				</div>
-				<div class="minor-corner minor-corner-top-left"></div>
-				<div class="minor-corner minor-corner-top-right"></div>
-				<div class="minor-corner minor-corner-bottom-left"></div>
-				<div class="minor-corner minor-corner-bottom-right"></div>
-			</div>
-		</li>
-		<?php endwhile; ?>
-		</ul>
-		<?php wp_reset_query(); ?>
-		<div class="corner corner-top-left"></div>
-		<div class="corner corner-top-right"></div>
-		<div class="corner corner-bottom-left"></div>
-		<div class="corner corner-bottom-right"></div>
-		<div class="recent-posts-more"><a href="http://starcitizen.howar31.com/allpost/">瀏覽所有文章</a></div>
-	</div>
-
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
 
@@ -57,7 +29,35 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 
 		</div><!-- #content -->
-	</div><!-- #primary -->
 
+		<div class="recent-posts">
+			<h1 class="recent-posts-head">最新文章</h1>
+			<?php query_posts('posts_per_page=5'); ?>
+			<ul class="recent-posts-list">
+			<?php while (have_posts()) : the_post(); ?>
+			<li class="recent-posts-entities">
+				<div class="recent-posts-thumbnail">
+					<a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a>
+					<div class="recent-posts-info">
+						<div class="recent-posts-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></div>
+						<div class="recent-posts-date"><?php echo get_the_date(); ?></div>
+					</div>
+					<div class="minor-corner minor-corner-top-left"></div>
+					<div class="minor-corner minor-corner-top-right"></div>
+					<div class="minor-corner minor-corner-bottom-left"></div>
+					<div class="minor-corner minor-corner-bottom-right"></div>
+				</div>
+			</li>
+			<?php endwhile; ?>
+			</ul>
+			<?php wp_reset_query(); ?>
+			<div class="corner corner-top-left"></div>
+			<div class="corner corner-top-right"></div>
+			<div class="corner corner-bottom-left"></div>
+			<div class="corner corner-bottom-right"></div>
+			<div class="recent-posts-more"><a href="http://starcitizen.howar31.com/allpost/">瀏覽所有文章</a></div>
+		</div>
+	</div><!-- #primary -->
+	
 <?php get_sidebar( 'front' ); ?>
 <?php get_footer(); ?>
