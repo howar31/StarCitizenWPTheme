@@ -507,7 +507,7 @@ hr {
 	text-shadow: 0px 0px 10px #FFF;	
 }
 #menu-main {
-	box-shadow: 0px 0px 1px 1px #000;
+	box-shadow: 1px 1px 1px 0px #000;
 	border-top: 1px solid #204C7A;
 	border-left: 1px solid #204C7A;
 }
@@ -545,6 +545,7 @@ hr {
 	margin-top: 3px;
 	border-left: 3px solid #204C7A;
 	border-top: 1px solid #204C7A;
+	box-shadow: 1px 1px 1px 0px #000;
 }
 #menu-main li ul.sub-menu li:hover {
 	border-left: 3px solid #6FD8FF;
