@@ -53,20 +53,41 @@ ul.recent-posts-list {
 }
 li.recent-posts-entities {
 	width: 50%;
-	height: auto;
 	float: left;
+	height: 300px;
+	padding: 10px;
+	box-sizing: border-box;
 }
 li.recent-posts-entities:first-of-type {
 	width: 100%;
 	font-size: 1.2em;
+	height: 400px;
 }
-.recent-posts-thumbnail {
+.recent-posts-box {
 	border: 1px solid rgba(0, 162, 253, 0.15);
 	padding: 10px;
-	margin: 10px;
 	position: relative;
 	background-color: rgba(0, 0, 0, 0.5);
 	min-height: 50px;
+	height: 100%;
+	box-sizing: border-box;
+}
+.recent-posts-thumbnail {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.recent-posts-thumbnail img.wp-post-image {
+	height: 100%;
+	max-width: none;
+	width: auto;
+	position: absolute;
+	top: -100%;
+	bottom: -100%;
+	left: -100%;
+	right: -100%;
+	margin: auto;
 }
 .recent-posts-info {
 	position: absolute;
@@ -79,11 +100,11 @@ li.recent-posts-entities:first-of-type {
 	box-sizing: border-box;
 	transition-duration: 0.3s;
 }
-.recent-posts-thumbnail:hover .recent-posts-info {
+.recent-posts-box:hover .recent-posts-info {
 	background-color: rgba(0, 0, 0, 0.9);
 	transition-duration: 0.3s;
 	}
-.recent-posts-thumbnail:hover .recent-posts-title {
+.recent-posts-box:hover .recent-posts-title {
 	text-shadow: 0px 0px 25px #0DA8FF;
 	transition-duration: 0.1s;
 }

@@ -32,12 +32,12 @@ get_header(); ?>
 
 		<div class="recent-posts">
 			<h1 class="recent-posts-head">最新文章</h1>
-			<?php query_posts('posts_per_page=5'); ?>
+			<?php query_posts('posts_per_page=7'); ?>
 			<ul class="recent-posts-list">
 			<?php while (have_posts()) : the_post(); ?>
 			<li class="recent-posts-entities">
-				<div class="recent-posts-thumbnail">
-					<a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a>
+				<div class="recent-posts-box">
+					<div class="recent-posts-thumbnail"><a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a></div>
 					<div class="recent-posts-info">
 						<div class="recent-posts-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></div>
 						<div class="recent-posts-date"><?php echo get_the_date(); ?></div>
