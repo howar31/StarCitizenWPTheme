@@ -37,10 +37,12 @@ get_header(); ?>
 			<?php while (have_posts()) : the_post(); ?>
 			<li class="recent-posts-entities">
 				<div class="recent-posts-box">
-					<div class="recent-posts-thumbnail"><a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a></div>
-					<div class="recent-posts-info">
+					<?php $tbnail = (wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) ))?wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) ):get_stylesheet_directory_uri() ."/images/default-thumbnail.png"; ?>
+					<div class="recent-posts-thumbnail" style="background-image: url('<?php echo  $tbnail; ?>');">
 						<div class="recent-posts-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></div>
-						<div class="recent-posts-date"><?php echo get_the_date(); ?></div>
+						<div class="recent-posts-info">
+							<div class="recent-posts-date"><?php echo get_the_date(); ?></div>
+						</div>
 					</div>
 					<div class="minor-corner minor-corner-top-left"></div>
 					<div class="minor-corner minor-corner-top-right"></div>

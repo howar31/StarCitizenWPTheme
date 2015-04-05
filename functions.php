@@ -55,15 +55,4 @@ function custom_excerpt_more( $more ) {
 	return ' ...';
 }
 add_filter( 'excerpt_more', 'custom_excerpt_more' );
-
-function fallback_post_thumbnail_html( $html ) {
-    // If there is no post thumbnail,
-    // Return a default image
-    if ( $html == '' ) {
-        return '<img src="' . get_stylesheet_directory_uri() . '/images/default-thumbnail.png" class="wp-post-image" />';
-    }
-    // Else, return the post thumbnail
-    return $html;
-}
-add_filter( 'post_thumbnail_html', 'fallback_post_thumbnail_html' );
 ?>
