@@ -13,11 +13,19 @@
 		<header class="entry-header">
 			<div class="entry-header-content">
 				<div class="ttop"></div>
-				<?php the_post_thumbnail(); ?>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
 			</div>
 			<div class="tbottom"></div>
 		</header>
+		<?php endif; ?>
+		<?php if ( ! post_password_required() && ! is_attachment() && has_post_thumbnail() && ! is_category() && ! is_home() ) : ?>
+			<div class="wp-post-image-holder">
+				<?php the_post_thumbnail(); ?>
+				<div class="minor-corner minor-corner-top-left"></div>
+				<div class="minor-corner minor-corner-top-right"></div>
+				<div class="minor-corner minor-corner-bottom-left"></div>
+				<div class="minor-corner minor-corner-bottom-right"></div>
+			</div>
 		<?php endif; ?>
 
 		<div class="entry-content">

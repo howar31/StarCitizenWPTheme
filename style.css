@@ -962,6 +962,9 @@ article.format-aside h1 a:hover {
 	li.recent-posts-entities {
 		width: 100%;
 	}
+	li.recent-posts-entities:first-of-type {
+		height: 300px;
+	}
 	div.recent-posts {
 		padding: 20px;
 	}
