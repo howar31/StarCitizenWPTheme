@@ -554,6 +554,7 @@ hr {
 	box-shadow: 1px 1px 1px 0px #000;
 	border-top: 1px solid #204C7A;
 	border-left: 1px solid #204C7A;
+	transition-duration: 0.3s;
 }
 #menu-main {
 	background-color: rgba(2, 14, 27, 0.8);
@@ -590,9 +591,11 @@ hr {
 	border-left: 3px solid #204C7A;
 	border-top: 1px solid #204C7A;
 	box-shadow: 1px 1px 1px 0px #000;
+	transition-duration: 0.3s;
 }
 #menu-main li ul.sub-menu li:hover {
 	border-left: 3px solid #6FD8FF;
+	transition-duration: 0.3s;
 }
 #menu-main li ul.sub-menu li a {
 	color: #6FD8FF;
@@ -1016,10 +1019,12 @@ article.format-aside h1 a:hover {
 	#menu-main li {
 		border-left: 2px solid rgba(0,0,0,0);
 		border-bottom: none;
+		transition-duration: 0.3s;
 	}
 	#menu-main li:hover {
 		border-left: 2px solid #6FD8FF;
 		border-bottom: none;
+		transition-duration: 0.3s;
 	}
 	#menu-main li ul.sub-menu li a,
 	#menu-main li ul.sub-menu li a:hover {
